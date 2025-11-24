@@ -133,6 +133,48 @@ h1 {
   font-weight: 500;
 }
 
+.section-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.tab-btn.active {
+  background: white;
+  color: #667eea;
+  border-color: white;
+}
+
+.task-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.task-section h3 {
+  margin: 0 0 1rem 0;
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
   .calculator-container {
     padding: 1rem;
@@ -148,5 +190,13 @@ h1 {
 
   .buttons-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
   }
 }
